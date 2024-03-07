@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import {Header} from "@/app/components/header";
 import {api} from "@/app/api";
 
-export default async function ModelPage(params, searchParams) {
+export default async function ModelPage(params) {
   const paramId = params.params.id;
   const models = await api.models.list();
   const model = models.find((model) => model.id === paramId);
