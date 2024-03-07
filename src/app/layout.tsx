@@ -16,13 +16,13 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body
-        className="dark container m-auto grid min-h-screen 
+        className="dark container m-auto grid 
       grid-rows-[auto,1fr,auto] bg-background px-4 
       font-sans antialiased"
       >
         <header className="mb-2 mt-8 flex flex-col items-center">
           <Link href="/">
-            <h1 className="text-6xl font-bold">REFRESH</h1>
+            <h1 className="text-6xl font-bold tracking-wide">REFRESH</h1>
           </Link>
         </header>
         <Navigation />
