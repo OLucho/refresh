@@ -10,8 +10,8 @@ export default async function HomePage() {
       <Header />
       <div className="-w-72 container mx-auto  ">
         <section
-          className="grid grid-cols-1
-        gap-2 md:grid-cols-2 lg:grid-cols-3
+          className="grid 
+        grid-cols-3 gap-2
       "
         >
           <div>
