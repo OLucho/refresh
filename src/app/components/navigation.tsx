@@ -9,12 +9,14 @@ import {
 
 export function Navigation() {
   return (
-    <div className="sticky flex h-max justify-center">
+    <div className="flex h-max justify-center">
       <NavigationMenu>
         <div className="flex justify-between">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Girls</NavigationMenuTrigger>
+              <NavigationMenuTrigger>
+                <NavigationMenuLink href="/girls">Girls</NavigationMenuLink>
+              </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="flex w-32 flex-col p-4">
                   <NavigationMenuLink href="/girls/staff">Staff</NavigationMenuLink>
@@ -25,7 +27,9 @@ export function Navigation() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Boys</NavigationMenuTrigger>
+              <NavigationMenuTrigger>
+                <NavigationMenuLink href="/boys">Boys</NavigationMenuLink>
+              </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="flex w-32 flex-col p-4">
                   <NavigationMenuLink href="/boys/staff">Staff</NavigationMenuLink>
