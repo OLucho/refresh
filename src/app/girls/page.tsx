@@ -1,21 +1,21 @@
 import {api} from "../api";
 import {Header} from "../components/header";
 
-export default async function BoysPage() {
+export default async function GirlsPage() {
   const models = await api.models.list();
 
-  const boys = models.filter((model) => model.gender === "m");
+  const girls = models.filter((model) => model.gender === "f");
 
   return (
     <>
-      <Header subtitle="BOYS" />
+      <Header subtitle="GIRLS" />
       <div className="container">
         <section
           className="flex flex-wrap justify-center gap-4
           "
         >
-          {boys.map((b) => (
-            <div key={b.id} className="flex flex-col items-center hover:cursor-pointer">
+          {girls.map((b) => (
+            <div key={b.id} className="flex flex-col items-center">
               <div className="h-80 w-80 overflow-hidden rounded-lg">
                 <img
                   alt={b.name}
