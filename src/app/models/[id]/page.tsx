@@ -10,6 +10,12 @@ export default async function ModelPage(params) {
   const models = await api.models.list();
   const model = models.find((model) => model.id === paramId);
 
+  model.medidas = model.medidas.replace(/\./g, ",");
+  model.height = model.height.replace(/\./g, ",");
+  model.foot = model.foot.replace(/\./g, ",");
+  model.pants = model.pants.replace(/\./g, ",");
+  model.shirt = model.shirt.replace(/\./g, ",");
+
   return (
     <>
       <Header />
