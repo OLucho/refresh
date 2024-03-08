@@ -3,8 +3,7 @@ export const api = {
     list: async () => {
       return fetch(
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vTIOlHczO9rziE9R_5jf2fb0t880-IjGpaXL5M9sG7XNq9D8P2dLM8T1QV7gjN8dm4wbu1nATS1Nm7j/pub?output=csv",
-        // {next: {tags: ["models"]}},
-        {cache: "no-cache"},
+        {next: {tags: ["models"]}},
       )
         .then((res) => res.text())
         .then((text) =>
@@ -15,7 +14,6 @@ export const api = {
               const [
                 id,
                 name,
-                lastName,
                 gender,
                 medidas,
                 foot,
@@ -24,7 +22,6 @@ export const api = {
                 pants,
                 skin,
                 shirt,
-                hips,
                 height,
                 img,
                 isTeen,
@@ -37,7 +34,6 @@ export const api = {
               return {
                 id,
                 name,
-                lastName,
                 gender,
                 medidas,
                 foot,
@@ -46,7 +42,6 @@ export const api = {
                 pants,
                 skin,
                 shirt,
-                hips,
                 height,
                 img,
                 isTeen,

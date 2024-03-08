@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
       <body
         className="dark container m-auto grid 
       grid-rows-[auto,1fr,auto] bg-background px-4 antialiased"

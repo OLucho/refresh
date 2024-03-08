@@ -3,6 +3,7 @@
 import {Header} from "@/app/components/header";
 import {api} from "@/app/api";
 import {Button} from "@/components/ui/button";
+import {Separator} from "@/components/ui/separator";
 
 export default async function ModelPage(params) {
   const paramId = params.params.id;
@@ -12,27 +13,33 @@ export default async function ModelPage(params) {
   return (
     <>
       <Header />
-      <div className="mx-auto flex max-w-4xl items-center justify-center gap-10 py-8">
-        <div className="mb-8 flex items-center justify-center sm:flex-col md:flex-col">
-          <img
-            alt={`${model.name} ${model?.lastName}`}
-            className="h-96 w-96 object-cover"
-            src={model?.img}
-          />
+      <div
+        className="xs=flex-col mx-auto flex max-w-4xl items-start justify-around gap-10 
+        py-8 sm:flex-col sm:items-center md:flex-col
+        lg:flex-row
+      "
+      >
+        <div className="mb-8 flex">
+          <img alt={`${model.name} `} className="h-96 w-96 object-cover" src={model?.img} />
         </div>
-        <div className="text-center">
-          <h1 className="font-bol mb-7 text-4xl">
-            {model.name} {model?.lastName}
-          </h1>
-          <p className="text-gray-300">Medidas: {model?.medidas}</p>
-          <p className="text-gray-300">Color de ojos: {model?.eyesColor}</p>
-          <p className="text-gray-300">Color de pelo: {model?.hairColor}</p>
-          <p className="text-gray-300">Color de piel: {model?.skin}</p>
-          <p className="text-gray-300">Altura: {model?.height}</p>
-          <p className="text-gray-300">Talla de pantalón: {model?.pants}</p>
-          <p className="text-gray-300">Talla de camisa: {model?.shirt}</p>
-          <p className="text-gray-300">Talla de zapato: {model?.foot}</p>
-          <p className="text-gray-300">Cadera: {model?.hips}</p>
+        <div className="flex h-full flex-col sm:flex-row sm:items-center sm:gap-10 md:lg:flex-col">
+          <h1 className="text-4xl  font-bold capitalize">{model.name}</h1>
+          <div
+            className="
+            flex flex-col
+            gap-2
+            text-gray-300              
+        "
+          >
+            <p className="text-gray-300">Medidas: {model?.medidas}</p>
+            <p className="text-gray-300">Color de ojos: {model?.eyesColor}</p>
+            <p className="text-gray-300">Color de pelo: {model?.hairColor}</p>
+            <p className="text-gray-300">Color de piel: {model?.skin}</p>
+            <p className="text-gray-300">Altura: {model?.height} cm</p>
+            <p className="text-gray-300">Talla de pantalón: {model?.pants}</p>
+            <p className="text-gray-300">Talla de camisa: {model?.shirt}</p>
+            <p className="text-gray-300">Talla de zapato: {model?.foot}</p>
+          </div>
         </div>
       </div>
       <div className="flex justify-center hover:cursor-pointer">
@@ -42,6 +49,7 @@ export default async function ModelPage(params) {
           </a>
         </Button>
       </div>
+      <Separator />
     </>
   );
 }
