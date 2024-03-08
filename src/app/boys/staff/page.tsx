@@ -7,6 +7,8 @@ export default async function BoysPage() {
 
   const boys = models.filter((model) => model.gender === "m");
 
+  console.log(boys);
+
   return (
     <>
       <Header subtitle="BOYS" />

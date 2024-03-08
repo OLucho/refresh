@@ -21,7 +21,7 @@ export function ModelList({models}) {
             router.push(`/models/${m.id}`);
           }}
         >
-          <div className="h-[27rem] w-[27rem] overflow-hidden rounded-lg">
+          <div className="h-[20rem] w-[20rem] overflow-hidden rounded-lg lg:h-[27rem] lg:w-[27rem]">
             <img
               alt={m.name}
               className="
@@ -30,9 +30,7 @@ export function ModelList({models}) {
               src={m.img}
             />
           </div>
-          <p className="mt-2 text-3xl font-bold">
-            {m.name} {m.lastName}
-          </p>
+          <p className="mt-2 text-3xl font-bold">{m.name}</p>
         </div>
       ))}
     </section>

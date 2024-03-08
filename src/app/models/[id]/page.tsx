@@ -14,16 +14,22 @@ export default async function ModelPage(params) {
     <>
       <Header />
       <div
-        className="xs=flex-col mx-auto flex max-w-4xl items-start justify-around gap-10 
-        py-8 sm:flex-col sm:items-center md:flex-col
+        className="mx-auto flex max-w-4xl flex-col  items-center justify-around 
+        gap-10 py-8
         lg:flex-row
       "
       >
-        <div className="mb-8 flex">
-          <img alt={`${model.name} `} className="h-96 w-96 object-cover" src={model?.img} />
+        <div className="flex h-[25rem] w-[25rem]">
+          <img
+            alt={`${model.name} `}
+            className="
+              h-full w-full rounded-md object-cover
+          "
+            src={model?.img}
+          />
         </div>
-        <div className="flex h-full flex-col sm:flex-row sm:items-center sm:gap-10 md:lg:flex-col">
-          <h1 className="text-4xl  font-bold capitalize">{model.name}</h1>
+        <div className="flex h-full flex-col  sm:items-center lg:flex-col lg:gap-11">
+          <h1 className="mb-4 text-4xl font-bold capitalize lg:mb-0">{model.name}</h1>
           <div
             className="
             flex flex-col
@@ -43,7 +49,7 @@ export default async function ModelPage(params) {
         </div>
       </div>
       <div className="flex justify-center hover:cursor-pointer">
-        <Button variant="link">
+        <Button className="my-4 h-7 w-7" variant="link">
           <a href={model?.polaroid} rel="noreferrer" target="_blank">
             POLAROID
           </a>
