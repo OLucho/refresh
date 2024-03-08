@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import {Header} from "@/app/components/header";
 import {api} from "@/app/api";
+import {Button} from "@/components/ui/button";
 
 export default async function ModelPage(params) {
   const paramId = params.params.id;
@@ -20,7 +21,7 @@ export default async function ModelPage(params) {
           />
         </div>
         <div className="text-center">
-          <h1 className="text-4xl font-bold">
+          <h1 className="font-bol mb-7 text-4xl">
             {model.name} {model?.lastName}
           </h1>
           <p className="text-gray-300">Medidas: {model?.medidas}</p>
@@ -33,6 +34,13 @@ export default async function ModelPage(params) {
           <p className="text-gray-300">Talla de zapato: {model?.foot}</p>
           <p className="text-gray-300">Cadera: {model?.hips}</p>
         </div>
+      </div>
+      <div className="flex justify-center hover:cursor-pointer">
+        <Button variant="link">
+          <a href={model?.polaroid} rel="noreferrer" target="_blank">
+            POLAROID
+          </a>
+        </Button>
       </div>
     </>
   );
