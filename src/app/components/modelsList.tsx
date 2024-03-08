@@ -10,7 +10,7 @@ export function ModelList({models}) {
 
   return (
     <section
-      className="flex flex-wrap justify-center gap-4 
+      className="flex flex-wrap justify-center gap-5 
           "
     >
       {models.map((m) => (
@@ -21,7 +21,7 @@ export function ModelList({models}) {
             router.push(`/models/${m.id}`);
           }}
         >
-          <div className="h-80 w-80 overflow-hidden rounded-lg">
+          <div className="h-[27rem] w-[27rem] overflow-hidden rounded-lg">
             <img
               alt={m.name}
               className="

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/archivo-black": "^5.0.19",
+    "@fontsource/poppins": "^5.0.12",
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",

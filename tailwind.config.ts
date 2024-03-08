@@ -20,6 +20,7 @@ const config = {
     extend: {
       fontFamily: {
         ArchivoBlack: ["sans-serif"],
+        poppins: ["poppins"],
       },
       colors: {
         border: "hsl(var(--border))",

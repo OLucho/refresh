@@ -7,6 +7,8 @@ export default async function GirlsPage() {
 
   const girls = models.filter((model) => model.gender === "f");
 
+  console.log(girls);
+
   return (
     <>
       <Header subtitle="GIRLS" />

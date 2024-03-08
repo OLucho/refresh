@@ -14,9 +14,7 @@ export function Navigation() {
         <div className="flex justify-between">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>
-                <NavigationMenuLink href="/girls">Girls</NavigationMenuLink>
-              </NavigationMenuTrigger>
+              <NavigationMenuTrigger>Girls</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="flex w-32 flex-col p-4">
                   <NavigationMenuLink href="/girls/staff">Staff</NavigationMenuLink>
@@ -27,9 +25,7 @@ export function Navigation() {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger>
-                <NavigationMenuLink href="/boys">Boys</NavigationMenuLink>
-              </NavigationMenuTrigger>
+              <NavigationMenuTrigger>Boys</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="flex w-32 flex-col p-4">
                   <NavigationMenuLink href="/boys/staff">Staff</NavigationMenuLink>

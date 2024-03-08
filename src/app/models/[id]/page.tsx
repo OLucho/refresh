@@ -26,16 +26,12 @@ export default async function ModelPage(params) {
           <p className="text-gray-300">Medidas: {model?.medidas}</p>
           <p className="text-gray-300">Color de ojos: {model?.eyesColor}</p>
           <p className="text-gray-300">Color de pelo: {model?.hairColor}</p>
-          <div className="mt-4 flex items-center justify-center">
-            <a
-              className="flex items-center text-blue-500 hover:text-blue-700"
-              href={model.instagram}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Instagram ícono
-            </a>
-          </div>
+          <p className="text-gray-300">Color de piel: {model?.skin}</p>
+          <p className="text-gray-300">Altura: {model?.height}</p>
+          <p className="text-gray-300">Talla de pantalón: {model?.pants}</p>
+          <p className="text-gray-300">Talla de camisa: {model?.shirt}</p>
+          <p className="text-gray-300">Talla de zapato: {model?.foot}</p>
+          <p className="text-gray-300">Cadera: {model?.hips}</p>
         </div>
       </div>
     </>
