@@ -25,7 +25,7 @@ export default async function ModelPage(params) {
         lg:flex-row
       "
       >
-        <div className="flex h-[25rem] w-[25rem]">
+        <div className="mr-[15px] flex h-[22rem] w-[22rem] lg:h-[30rem] lg:w-[30rem]">
           <img
             alt={`${model.name} `}
             className="

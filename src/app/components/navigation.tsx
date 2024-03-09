@@ -1,3 +1,12 @@
+import {Poppins} from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin-ext"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -9,14 +18,19 @@ import {
 
 export function Navigation() {
   return (
-    <div className="flex h-max justify-center">
-      <NavigationMenu>
+    <div
+      className={`
+    flex h-max justify-center
+    ${poppins.className}
+    `}
+    >
+      <NavigationMenu className="mt-2">
         <div className="flex justify-between">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Girls</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="flex w-32 flex-col p-4">
+                <div className="flex h-28 w-44 flex-col justify-center p-4 text-lg">
                   <NavigationMenuLink href="/girls/staff">Staff</NavigationMenuLink>
                   <NavigationMenuLink href="/girls/new-faces">New Faces</NavigationMenuLink>
                   <NavigationMenuLink href="/girls/teens">Teens</NavigationMenuLink>
@@ -27,7 +41,7 @@ export function Navigation() {
             <NavigationMenuItem>
               <NavigationMenuTrigger>Boys</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="flex w-32 flex-col p-4">
+                <div className="flex h-28 w-44 flex-col justify-center p-4 text-lg">
                   <NavigationMenuLink href="/boys/staff">Staff</NavigationMenuLink>
                   <NavigationMenuLink href="/boys/new-faces">New Faces</NavigationMenuLink>
                   <NavigationMenuLink href="/boys/teens">Teens</NavigationMenuLink>
