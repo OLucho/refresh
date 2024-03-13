@@ -11,6 +11,8 @@
   "dependencies": {
     "@fontsource/archivo-black": "^5.0.19",
     "@fontsource/poppins": "^5.0.12",
+    "@hookform/resolvers": "^3.3.4",
+    "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
@@ -22,9 +24,11 @@
     "postcss": "^8.4.33",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.0",
