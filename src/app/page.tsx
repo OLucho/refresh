@@ -11,72 +11,21 @@ export default async function HomePage() {
       <div className="-w-72 container mx-auto  ">
         <section
           className="grid 
-        grid-cols-3 gap-4
+        grid-cols-3 
       "
         >
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
-          <div>
-            <Image
-              alt="Model"
-              className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-              src={Model}
-            />
-          </div>
+          {Array.from({length: 15}).map((_, index) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <div key={index}>
+              <Image
+                alt="Model"
+                className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
+                height={500}
+                src={`/home/${index + 1}.webp`}
+                width={500}
+              />
+            </div>
+          ))}
         </section>
       </div>
     </>
