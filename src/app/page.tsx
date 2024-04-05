@@ -9,7 +9,7 @@ export default async function HomePage() {
       <div className="-w-72 container mx-auto  ">
         <section
           className="grid 
-        grid-cols-3 gap-1
+        grid-cols-3 gap-2
       "
         >
           {Array.from({length: 15}).map((_, index) => (
@@ -17,7 +17,7 @@ export default async function HomePage() {
             <div key={index}>
               <Image
                 alt="Model"
-                className="h-full rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
+                className="rounded-lg transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
                 height={430}
                 src={`/home/${index + 1}.webp`}
                 width={430}

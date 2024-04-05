@@ -51,7 +51,7 @@ export default function ContactPage() {
         </Button>
 
         <Dialog>
-          <DialogTrigger className="h-[3rem] w-[32rem] rounded-full bg-[#e0da95] font-bold">
+          <DialogTrigger className="h-[3rem] w-[25rem] rounded-full bg-[#e0da95] font-bold">
             <span className="text-black">¿Te gustaría formar parte de nuestro staff?</span>
           </DialogTrigger>
           <DialogContent className="font-ArchivoBlack">
