@@ -7,7 +7,7 @@ export function ButtonCheckoutWhatsapp() {
       <Button
         style={{display: "flex", alignItems: "center", gap: "5px"}}
         onClick={() => {
-          const mensaje = "¡Hola! Me gustaría formar parte de Refresh.";
+          const mensaje = "¡Hola! Me gustaría solicitar más infomación sobre REFRESH ACADEMY...";
           const numeroDeTelefono = "5491173669220";
           const url = `https://wa.me/${numeroDeTelefono}?text=${encodeURIComponent(mensaje)}`;
 

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import Model from "../../ana.jpg";
-
 import {Header} from "./components/header";
 
 export default async function HomePage() {
@@ -11,7 +9,7 @@ export default async function HomePage() {
       <div className="-w-72 container mx-auto  ">
         <section
           className="grid 
-        grid-cols-3 
+        grid-cols-3 gap-1
       "
         >
           {Array.from({length: 15}).map((_, index) => (
@@ -19,10 +17,10 @@ export default async function HomePage() {
             <div key={index}>
               <Image
                 alt="Model"
-                className="rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
-                height={500}
+                className="h-full rounded-md transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg"
+                height={430}
                 src={`/home/${index + 1}.webp`}
-                width={500}
+                width={430}
               />
             </div>
           ))}

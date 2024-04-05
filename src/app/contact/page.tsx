@@ -13,42 +13,42 @@ import {Button} from "@/components/ui/button";
 import {Header} from "../components/header";
 
 export default function ContactPage() {
+  const buttonCn = "flex max-w-[30rem] min-w-[25rem] items-center gap-1 rounded-full bg-[#c9c9e4] ";
+
   return (
     <>
       <Header subtitle="Contacto" />
 
-      <div className="flex h-[63%] flex-col items-center justify-between">
-        <div className="mt-7 flex flex-col items-center gap-8">
-          <Button
-            className="flex w-[30rem] items-center gap-1 rounded-full bg-[#c9c9e4] "
-            onClick={() => {
-              window.open("https://www.instagram.com/refreshok/", "_blank");
-            }}
-          >
-            <img alt="Instagram Icon" className="h-6 w-6" src="/instagram.svg" />
-            <span className="min-w-[5rem] text-black">Instagram</span>
-          </Button>
+      <div className="mt-7 flex flex-col items-center gap-8">
+        <Button
+          className={buttonCn}
+          onClick={() => {
+            window.open("https://www.instagram.com/refreshok/", "_blank");
+          }}
+        >
+          <img alt="Instagram Icon" className="h-6 w-6" src="/instagram.svg" />
+          <span className="min-w-[5rem] text-black">Instagram</span>
+        </Button>
 
-          <Button
-            className="flex w-[30rem] items-center gap-1 rounded-full bg-[#c9c9e4]"
-            onClick={() => {
-              window.open(`https://wa.me/5491173669220`, "_blank");
-            }}
-          >
-            <img alt="whatsapp Icon" className="h-6 w-6" src="/whatsapp.svg" />
-            <span className="min-w-[5rem] text-black">Whatsapp</span>
-          </Button>
+        <Button
+          className={buttonCn}
+          onClick={() => {
+            window.open(`https://wa.me/5491173669220`, "_blank");
+          }}
+        >
+          <img alt="whatsapp Icon" className="h-6 w-6" src="/whatsapp.svg" />
+          <span className="min-w-[5rem] text-black">Whatsapp</span>
+        </Button>
 
-          <Button
-            className="flex w-[30rem] items-center gap-1 rounded-full bg-[#c9c9e4]"
-            onClick={() => {
-              window.open("mailto:refreshproducer@gmail.com", "_blank");
-            }}
-          >
-            <img alt="Email icon" className="h-6 w-6" src="/email.svg" />
-            <span className="min-w-[5rem] text-black">Email</span>
-          </Button>
-        </div>
+        <Button
+          className={buttonCn}
+          onClick={() => {
+            window.open("mailto:refreshproducer@gmail.com", "_blank");
+          }}
+        >
+          <img alt="Email icon" className="h-6 w-6" src="/email.svg" />
+          <span className="min-w-[5rem] text-black">Email</span>
+        </Button>
 
         <Dialog>
           <DialogTrigger className="h-[3rem] w-[32rem] rounded-full bg-[#e0da95] font-bold">

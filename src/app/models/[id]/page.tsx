@@ -2,8 +2,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import {Header} from "@/app/components/header";
 import {api} from "@/app/api";
-import {Button} from "@/components/ui/button";
 import {Separator} from "@/components/ui/separator";
+
+import {ClientButton} from "./page.client";
 
 export default async function ModelPage(params) {
   const paramId = params.params.id;
@@ -55,11 +56,7 @@ export default async function ModelPage(params) {
         </div>
       </div>
       <div className="flex justify-center hover:cursor-pointer">
-        <Button className="my-4 h-7 w-7" variant="link">
-          <a href={model?.polaroid} rel="noreferrer" target="_blank">
-            POLAROID
-          </a>
-        </Button>
+        <ClientButton polaroidLink={model?.polaroid} />
       </div>
       <Separator />
     </>

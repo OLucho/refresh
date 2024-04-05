@@ -28,7 +28,7 @@ export default function AcademyPage() {
           height={394}
           src="https://www.youtube.com/embed/zANlxzxgkc4"
           title="YouTube video player"
-          width={900}
+          width={500}
         />
       </div>
       <ButtonCheckoutWhatsapp />
