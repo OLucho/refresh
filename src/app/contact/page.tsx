@@ -70,8 +70,8 @@ export default function ContactPage() {
 
                 <div className="mt-2 flex flex-col  items-center rounded-xl bg-white  p-5 text-left text-black">
                   <p>
-                    Presentación + datos (medidas de pecho / cintura / cadera / talle de remera /
-                    pantalón / color de ojos, pelo y piel y edad)
+                    Presentación + datos (altura, medidas de pecho / cintura / cadera / talle de
+                    remera / pantalón / color de ojos, pelo y piel y edad)
                     <p className="mt-2 text-left font-bold">*Adjuntar 5 fotos tipo polaroids*</p>
                   </p>
 
