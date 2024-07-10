@@ -17,16 +17,16 @@ export default function AcademyPage() {
       <div
         className="
         flex
+        min-w-[500px]
         items-center
         justify-center
       "
       >
         <iframe
           allowFullScreen
-          allow="
-          "
+          allow=""
           height={394}
-          src="https://www.youtube.com/embed/zANlxzxgkc4"
+          src="https://www.youtube.com/embed/UJyS8lLBlpg"
           title="YouTube video player"
           width={500}
         />
